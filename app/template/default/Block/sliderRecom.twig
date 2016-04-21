@@ -1,0 +1,30 @@
+<script>
+
+
+ 
+//サムネイル
+$(document).ready(function(){
+  $('.bxsliderRecom').bxSlider({
+  pager:false,
+  minSlides: 3,//１スライドに表示するサムネイルの数
+  maxSlides: 5,//１スライドに表示するサムネイルの最大数
+  slideWidth: 150,//サムネイルの横幅（単位はpx）
+  slideMargin: 10,//サムネイル間の余白（単位はpx）
+  nextSelector: '#NextIconRecom',//"次へ”矢印をカスタマイズするための記述
+  prevSelector: '#PrevIconRecom'//"前へ”矢印をカスタマイズするための記述
+      });
+});
+$(document).ready(function(){
+  $('.bxsliderTopics').bxSlider({
+  pager:false,
+  minSlides: 2,//１スライドに表示するサムネイルの数
+  maxSlides: 2,//１スライドに表示するサムネイルの最大数
+  slideWidth: 470,//サムネイルの横幅（単位はpx）
+  slideHeight: 220,
+  slideMargin: 10,//サムネイル間の余白（単位はpx）
+  nextSelector: '#NextIconTopics',//"次へ”矢印をカスタマイズするための記述
+  prevSelector: '#PrevIconTopics'//"前へ”矢印をカスタマイズするための記述
+      });
+});
+
+</script>

@@ -1,0 +1,69 @@
+{% extends 'default_frame_shop.twig' %}
+
+
+{% block main %}
+    <div class="mainContent">
+      <section>
+        <div class="page_sTit2 garamond">
+          <h2>BIRTH STONE</h2>
+        </div>
+        <div class="birth_main">
+          <img src="{{ app.config.front_urlpath }}/img/common/birth_main.png" alt="あて">
+        </div>
+        <div class="birth_conc">
+          <p class="mb-20 garamond birth_conc_tit">&ndash; Latia BIRTH STONE &ndash;</p>
+          <p class="mb-20">小さな種が芽をだした日</p>
+          <p class="mb-20">ふと心に灯りがともった日</p>
+          <p class="mb-20">大切な物を抱きしめた日</p>
+          <p class="mb-20">そして、あなたの物語が始まった日</p>
+          <p class="mb-20">それぞれに忘れられない<br>大切な誕生日があるはず</p>
+          <p class="mb-40">その大切な誕生日の輝きを<br>ずっと近くに</p>
+          <p class="mb-20 garamond birth_conc_tit">〜 concept 〜</p>
+          <p class="mb-20">誕生日だけじゃない<br>大切な記念日や想い出の日に<br>誰かへの、そして自分への<br>特別な贈り物としていかがでしょうか？</p>
+          <p>Latiaから愛を込めて<br>HAPPY BIRTHDAY !</p>
+        </div>
+        
+        {% if month %}
+{% autoescape false %}
+{{month}}
+{% endautoescape %}
+        {% endif %}
+        <div class="top_cont1 mb-90">
+        <ul class="top_cont1_cont alpha">
+ {% for Product in pagination %}
+          <li>
+            <a href="{{ url('product_detail', {'id': Product.id}) }}"><img src="{{ app.config.image_save_urlpath }}/{{ Product.main_list_image|no_image_product }}" alt=""></a>
+            <a href="{{ url('product_detail', {'id': Product.id}) }}">{{Product.name}}<br />{{Product.getPrice02IncTaxMin|price }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div><!--cont1-->
+      <div class="birth_month mb-90">
+        <div class="birth_month-y clearfix">
+          <a class="birth_month_btn" href="./birth_stone?month=1"><span class="garamond">JANUARY</span><br>-1月-</a>
+          <a class="birth_month_btn" href="./birth_stone?month=2"><span class="garamond">FEBRUARY</span><br>-2月-</a>
+          <a class="birth_month_btn edge" href="./birth_stone?month=3"><span class="garamond">MARCH</span><br>-3月-</a>
+        </div><!--y-->
+        <div class="birth_month-y clearfix">
+          <a class="birth_month_btn" href="./birth_stone?month=4"><span class="garamond">APRIL</span><br>-4月-</a>
+          <a class="birth_month_btn" href="./birth_stone?month=5"><span class="garamond">MAY</span><br>-5月-</a>
+          <a class="birth_month_btn edge" href="./birth_stone?month=6"><span class="garamond">JUNE</span><br>-6月-</a>
+        </div><!--y-->
+        <div class="birth_month-y clearfix">
+          <a class="birth_month_btn" href="./birth_stone?month=7"><span class="garamond">JULY</span><br>-7月-</a>
+          <a class="birth_month_btn" href="./birth_stone?month=8"><span class="garamond">AUGUST</span><br>-8月-</a>
+          <a class="birth_month_btn edge" href="./birth_stone?month=9"><span class="garamond">SEPTEMBER</span><br>-9月-</a>
+        </div><!--y-->
+        <div class="birth_month-y clearfix">
+          <a class="birth_month_btn" href="./birth_stone?month=10"><span class="garamond">OCTOBER</span><br>-10月-</a>
+          <a class="birth_month_btn" href="./birth_stone?month=11"><span class="garamond">NOVEMBER</span><br>-11月-</a>
+          <a class="birth_month_btn edge" href="./birth_stone?month=12"><span class="garamond">DECEMBER</span><br>-12月-</a>
+        </div><!--y-->
+      </div><!--birth_month-->
+        
+        
+        
+      </section>
+    </div><!--mainContent-->  
+
+{% endblock %}

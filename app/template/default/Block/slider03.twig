@@ -1,0 +1,56 @@
+<script>
+$(document).ready(function(){
+  $('.bxslider03').bxSlider({
+  controls:false,
+  auto: true,
+  mode: 'fade',
+  });
+});
+
+
+$(function(){
+var months = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+$('.gdate').each(function(){
+var text = $(this).text();
+var year = text.substring(0,4);
+var month = text.substring(4);
+var monthtext = months[month-1];
+$(this).text(year + " " + monthtext);
+
+});
+
+
+
+
+$('.gdatearch').each(function(){
+
+var text = $(this).text();
+var year = text.substring(0,4);
+
+var month = text.substring(4);
+var monthtext = months[month-1];
+
+if($("#archive"+year).length<=0){
+	$('#gallery_archive').append("<dl class='gallery_arc_cont' id='archive"+year+"'><dt class='clearfix'><p class='gallery_arc_cont_y mb-30'>"+year+"</p></dt></dl>");
+}
+$('<dd class="'+year+' '+monthtext+'"></dd>').appendTo("#archive"+year);
+$(this).appendTo("."+year+"."+monthtext);
+
+$(this).text(monthtext);
+
+});
+
+$('.gallery_arc_cont:not(:first)').each(function(){
+
+    $(this).children('dt').append('<img class="gallery_arc_cont_btn" src="{{ app.config.front_urlpath }}/img/common/gal_icon.png" alt="" style="cursor: pointer">')
+$(this).children('dd').hide();
+
+});
+
+$('.gallery_arc_cont_btn').click(function(){
+    $(this).parent().siblings('dd').show(500);
+});
+});
+
+
+ </script>

@@ -1,0 +1,59 @@
+{#
+This file is part of EC-CUBE
+
+Copyright(c) 2000-2015 LOCKON CO.,LTD. All Rights Reserved.
+
+http://www.lockon.co.jp/
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#}
+{% extends 'default_frame.twig' %}
+
+
+
+
+{% block main %}
+
+<div class="wrapper pageCont" id="gallery">
+
+<div class="pageTit garamond">
+      <h2>GALLERY</h2>
+    </div><!--pageTit-->
+<div class="pageInner">
+<p class="gallery_date garamond gdate">{{gdate}}</p>
+<div class="gallery_slide">
+<ul class="bxslider03">
+{% for path in galleryimg %}
+<li>
+<img src="{{app.config.user_data_urlpath}}/gallerydir/{{path}}"  alt="slide01" />
+</li>
+{% endfor %}
+</ul>
+</div>
+</div>
+
+<div class="pageInner">
+    <div class="gallery_arc garamond" id="gallery_archive">
+      <div class="gallery_arc_tit">
+        <p>ARCHIVE</p>
+      </div>
+  </div>
+</div>
+{% for date in gdates %}
+<a class="gdatearch" href="./gallery?gdate={{date}}">{{date}}</a>
+{% endfor %}
+
+</div>
+{% endblock %}

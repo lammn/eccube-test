@@ -1,0 +1,144 @@
+<div class="sp botMenu">
+<div id="infoSp">
+</div>
+
+<div class="shopMenu02">
+  <div class="shopMenu02_in clearfix garamond">
+    <div class="shopMenu02_btn menuBtn2">
+      <p>ITEM<br>CATEGORY</p>
+      <span class="closeBtns closeBtn2 closeBtn2--open"></span>
+    </div>
+    <div class="shopMenu02_btn menuBtn3">
+      <p>PRICE<br>CATEGORY</p>
+      <span class="closeBtns closeBtn3"></span>
+    </div>
+    <div class="shopMenu02_btn--edge menuBtn4">
+      <p>MATERIAL<br>CATEGORY</p>
+      <span class="closeBtns closeBtn4"></span>
+    </div>
+  </div><!--in-->
+  <nav class="spMenu2 spMenu2--open"><!--アイテムカテゴリー-->
+    <div class="shopMenu_tit02">
+        アイテムカテゴリー
+    </div>
+    <div class="clearfix">
+      <div class="menu_L">
+全商品<a class="menu_link" href="{{app.config.root}}products/list"></a>
+      </div>
+      <div class="menu_R">
+        新作<a class="menu_link" href="{{app.config.root}}products/list?category_id=6"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        ネックレス<a class="menu_link" href="{{app.config.root}}products/list?category_id=7"></a>
+      </div>
+      <div class="menu_R">
+        リング<a class="menu_link" href="{{app.config.root}}products/list?category_id=8"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        ピンキーリング<a class="menu_link" href="{{app.config.root}}products/list?category_id=9"></a>
+      </div>
+      <div class="menu_R">
+        ピアス<a class="menu_link" href="{{app.config.root}}products/list?category_id=10"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        イヤリング<a class="menu_link" href="{{app.config.root}}products/list?category_id=11"></a>
+      </div>
+      <div class="menu_R">
+        ブレスレット<a class="menu_link" href="{{app.config.root}}products/list?category_id=12"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        アンクレット<a class="menu_link" href="{{app.config.root}}products/list?category_id=13"></a>
+      </div>
+      <div class="menu_R">
+        ペアリング<a class="menu_link" href="{{app.config.root}}products/list?category_id=14"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L--bot">
+        バースストーン<a class="menu_link" href="{{app.config.root}}user_data/birthstone"></a>
+      </div>
+    </div><!--clearfix-->
+  </nav>
+  
+  <nav class="spMenu3"><!--プライスカテゴリー-->
+    <div class="shopMenu_tit02">
+        プライスカテゴリー
+    </div>
+    <div class="clearfix">
+      <div class="menu_L">
+        ¥0 〜 ¥5,000<a class="menu_link" href="{{app.config.root}}products/list?pricerange=1"></a>
+      </div>
+      <div class="menu_R">
+        ¥5,000 〜 ¥10,000<a class="menu_link" href="{{app.config.root}}products/list?pricerange=2"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        ¥10,000 〜 ¥20,000<a class="menu_link" href="{{app.config.root}}products/list?pricerange=3"></a>
+      </div>
+      <div class="menu_R">
+        ¥20,000 〜 ¥30,000<a class="menu_link" href="{{app.config.root}}products/list?pricerange=4"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        ¥30,000 〜 ¥40,000<a class="menu_link" href="{{app.config.root}}products/list?pricerange=5"></a>
+      </div>
+      <div class="menu_R">
+        ¥40,000 〜 ¥50,000<a class="menu_link" href="{{app.config.root}}products/list?pricerange=6"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L--bot">
+        ¥50,000 〜<a class="menu_link" href="{{app.config.root}}products/list?pricerange=7"></a>
+      </div>
+    </div><!--clearfix-->
+  </nav>
+  
+  <nav class="spMenu4"><!--マテリアルカテゴリー-->
+    <div class="shopMenu_tit02">
+        マテリアルカテゴリー
+    </div>
+    <div class="clearfix">
+      <div class="menu_L">
+        真鍮<a class="menu_link" href="{{app.config.root}}products/list?category_id=30"></a>
+      </div>
+      <div class="menu_R">
+        シルバー<a class="menu_link" href="{{app.config.root}}products/list?category_id=31"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L--bot">
+        K10<a class="menu_link" href="{{app.config.root}}products/list?category_id=32"></a>
+      </div>
+      <div class="menu_R--bot">
+        K18<a class="menu_link" href="{{app.config.root}}products/list?category_id=33"></a>
+      </div>
+    </div><!--clearfix-->
+  </nav>
+</div><!--Menu-->
+ <div  class="searchBox">
+        <form method="get" id="searchform1" action="{{ path('product_list') }}">
+
+                <div class="input_search clearfix">
+                    <input name="name" id="keywords1" value="" type="text">
+                    <input type="image" id="searchBtn1" class="bt_search" src="{{ app.config.front_urlpath }}/img/common/ser_btn.png" style="width:23px; height:23px"></inout>
+
+            </div>
+        </form>
+    </div>
+<ul class="footerMenu02">
+  <!--<a href="{{app.config.root}}user_data/howtoshop"><li><span class="garamond">HOW TO SHOP</span><br>お買い物方法</li></a>-->
+   <a href="{{app.config.root}}contact"> <li><span class="garamond">CONTACT US</span><br>お問い合わせ</li></a>
+    <a href="{{app.config.root}}user_data/size"><li><span class="garamond">TAKE THE SIZE</span><br>サイズの計り方</li></a>
+    <a href="{{app.config.root}}user_data/faq"><li><span class="garamond">FAQ</span><br>よくあるご質問</li></a>
+</ul>
+</div>

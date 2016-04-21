@@ -1,0 +1,4 @@
+name: 商品一覧の並び替えドロップダウンの順番変更
+code: ChangeItemSort
+version: 0.0.1
+event: ChangeItemSortEvent

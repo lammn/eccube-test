@@ -1,0 +1,67 @@
+{% extends 'default_frame_shop.twig' %}
+
+{% block main %}
+    <div class="mainContent">
+      <section>
+        <div class="page_sTit2 garamond">
+          <h2>TOPICS</h2>
+        </div>
+{% if topics %}
+        <div class="topics_main">
+          <img src="{{app.config.user_data_urlpath}}/topicsdir/{{topics}}" alt="あて">
+        </div>
+{% endif %}
+        <p class="birth_disc mb-40">commingsoon</p>
+       
+        <div style="text-align:center; margin-bottom:50px;">
+          <img src="{{ app.config.front_urlpath }}/img/common/t1.jpg" alt="">
+          <p>4月 Birth Stone ダイヤモンド</p>
+        </div>
+       
+        <ul class="goods_cont1 alpha">
+          {% if pagination %}
+{% for Product in pagination %}
+<li>
+            <a href="{{ url('product_detail', {'id': Product.id}) }}"><img src="{{ app.config.image_save_urlpath }}/{{ Product.main_list_image|no_image_product }}" alt=""></a>
+            <a href="{{ url('product_detail', {'id': Product.id}) }}"><span  class="productNameThumb">{{Product.name}}</span><br />{{Product.getPrice02IncTaxMin|price }}</a>
+</li>
+{% endfor %}
+{% endif %}
+</ul>
+        
+
+
+{% if pagination.paginationData.pageCount > 1 %}
+<div id="pagination_wrap" class="pagination">
+    <ul>
+        {% if pagination.paginationData.previous is defined %}
+            <li class="pagenation__item-previous">
+                <a href="{{app.config.root}}user_data/topics?pageno={{pagination.paginationData.previous}}"
+                   aria-label="Previous"><span aria-hidden="true">前へ</span></a>
+            </li>
+        {% endif %}
+        
+{% for page in pagination.paginationData.pagesInRange %}
+            {% if page == pagination.paginationData.current %}
+                <li class="pagenation__item active"><a href="{{app.config.root}}user_data/topics?pageno={{page}}"> {{ page }} </a></li>
+            {% else %}
+                <li class="pagenation__item"><a href="{{app.config.root}}user_data/topics?pageno={{page}}"> {{ page }} </a></li>
+            {% endif %}
+        {% endfor %}
+
+        {% if pagination.paginationData.next is defined %}
+            <li class="pagenation__item-next">
+                <a href="{{app.config.root}}user_data/topics?pageno={{pagination.paginationData.next}}"
+                   aria-label="Next"><span aria-hidden="true">次へ</span></a>
+            </li>
+        {% endif %}
+    </ul>
+</div>
+{% endif %}
+
+
+      
+      </section>
+    </div><!--mainContent-->  
+
+{% endblock %}

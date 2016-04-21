@@ -1,0 +1,493 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(//fonts.googleapis.com/css?family=EB+Garamond);
+
+@media (max-width: 767px){
+.wrapper {
+  width:94%;
+  margin:0 auto;
+}
+
+.pageTit {
+  text-align:center;
+  border-bottom:1px solid #ccc;
+  padding:20px 0 10px 0;
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.top_cont01--page {
+  border-bottom:1px solid #ccc;
+  margin-bottom:150px;
+}
+
+.pageCont {
+  border-bottom:1px solid #ccc;
+}
+
+.pageBot_btn01 {
+  text-align:right;
+  font-size:14px;
+  padding-bottom:20px;
+  display:block;
+  position:relative;
+  padding-right:20px;
+}
+
+
+/*index*/
+
+.top_cont01 {
+  text-align:center;
+  font-size:28px;
+  padding:40px 0 50px 0;
+}
+
+.top_cont01 a {
+  position:relative;
+  padding-right:20px;
+}
+
+.top_cont01 a:after {
+  content:">";
+  font-size:20px;
+  position:absolute;
+  right:-5px;
+}
+
+.imgText {
+  font-size:20px;
+}
+
+.img_L {
+  width:48%;
+  float:left;
+  text-align:center;
+}
+
+.img_R {
+  width:48%;
+  float:right;
+  text-align:center;
+}
+
+/*news*/
+
+.news_date {
+  text-align:center;
+  font-size:18px;
+  color:#fff;
+  width:80px;
+  height:80px;
+  margin:0 0 30px 0;
+  background-color:#dab8b6;
+  border-radius: 100px;        /* CSS3草案 */  
+  -webkit-border-radius: 100px;    /* Safari,Google Chrome用 */  
+  -moz-border-radius: 100px;   /* Firefox用 */  
+}
+.newsList .news_date {
+  text-align:center;
+  font-size:18px;
+  color:#fff;
+  width:80px;
+  height:80px;
+  margin:0 auto 30px auto;
+  background-color:#dab8b6;
+  border-radius: 100px;        /* CSS3草案 */  
+  -webkit-border-radius: 100px;    /* Safari,Google Chrome用 */  
+  -moz-border-radius: 100px;   /* Firefox用 */  
+}
+
+.news_date_y {
+  padding-top:18px;
+  margin-bottom:5px;
+}
+
+.news_date_d {
+  font-size:26px;
+}
+
+.newsImg {
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.newsCont {
+  padding-bottom:80px;
+}
+.newsList .newsCont {
+  padding-bottom:80px;
+  text-align:center;
+}
+
+/*concept*/
+
+.conceptText {
+  text-align:center;
+  padding:20px 0 40px 0;
+  font-size:16px;
+  line-height:2em;
+  font-family:"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+/*gallery*/
+
+.gallery_date {
+  text-align:center;
+  color:#666;
+  font-size:18px;
+  margin-bottom:20px;
+  margin-top:-10px;
+}
+
+.gallery_slide {
+  margin-bottom:100px;
+}
+
+.gallery_arc {
+  font-size:20px;
+  width:94%;
+  padding:0 3%;
+}
+
+.gallery_arc_tit {
+  padding-bottom:10px;
+  color:#666;
+  font-size:16px;
+}
+
+.gallery_arc_cont {
+  border-top:1px solid #ccc;
+  padding-top:15px;
+  margin-bottom:15px;
+}
+
+.gallery_arc_cont_y {
+  float:left;
+}
+
+.gallery_arc_cont_btn {
+  float:right;
+  width:40px;
+}
+
+.gallery_arc_cont dd:before {
+  content:"・";
+  color:#666;
+}
+
+.gallery_arc a {
+  color:#666;
+}
+
+.gallery_arc_cont dd {
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+.gallery_arc_cont dt p {
+  margin-top:10px;
+}
+
+.press_list li {
+  width:100%;
+  margin-bottom:40px;
+  text-align:center;
+}
+
+/*sitemap*/
+
+.sitemap_list {
+}
+
+.sitemap_list dt {
+  margin-bottom:20px;
+}
+.sitemap_list dt:before {
+  content:"■";
+  padding-right:5px;
+
+}
+
+.sitemap_list dd {
+  margin-bottom:10px;
+  padding-left:20px;
+}
+
+.mailmagazinecont iframe {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mailmagazineWrapper .wrapper {
+    width: 100% !important;
+}
+
+}
+
+@media (min-width: 767px){
+
+.wrapper {
+  width:760px;
+  margin:0 auto;
+}
+
+.pageTit {
+  text-align:center;
+  border-bottom:1px solid #ccc;
+  padding:50px 0 10px 0;
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.pageInner {
+  width:720px;
+  min-height: 700px;
+  margin:0 auto;
+}
+
+#gallery .pageInner {
+    min-height: inherit;
+}
+
+section {
+  line-height:1.5em;
+}
+
+.pageCont {
+  border-bottom:1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.top_cont01--page {
+  border-bottom:1px solid #ccc;
+  margin-bottom:150px;
+}
+
+.top_cont01--page2 {
+  border-bottom:1px solid #ccc;
+  margin-bottom:100px;
+}
+
+.pageBot_btn01 {
+  text-align:right;
+  padding-bottom:20px;
+}
+
+.pageBot_btn01 {
+  display:block;
+  position:relative;
+  padding-right:20px;
+}
+
+.pageBot_btn01 a:hover {
+  color:#dab8b6;
+}
+
+.pageBot_btn01 a:after {
+  content:">";
+  position:absolute;
+  right:0;
+}
+
+/*index*/
+
+.top img {
+  width:100%;
+}
+
+.top_cont01 {
+  text-align:center;
+  font-size:52px;
+  padding:40px 0 82px 0;
+}
+
+.top_cont01 a:hover {
+  color:#dab8b6;
+}
+
+.top_cont01 a {
+  position:relative;
+  padding-right:20px;
+  letter-spacing: 10px;
+}
+
+.top_cont01 a:after {
+  content:">";
+  font-size:30px;
+  position:absolute;
+  margin-left: 20px;
+}
+
+.imgText {
+  font-size:20px;
+}
+
+.img_L {
+  width:48%;
+  float:left;
+  text-align:center;
+}
+
+.img_R {
+  width:48%;
+  float:right;
+  text-align:center;
+}
+
+/*news*/
+
+.news_date {
+  text-align:center;
+  font-size:18px;
+  color:#fff;
+  width:80px;
+  height:80px;
+  margin:0 0 30px 0;
+  background-color:#dab8b6;
+  border-radius: 100px;        /* CSS3草案 */  
+  -webkit-border-radius: 100px;    /* Safari,Google Chrome用 */  
+  -moz-border-radius: 100px;   /* Firefox用 */  
+}
+.newsList .news_date {
+  text-align:center;
+  font-size:18px;
+  color:#fff;
+  width:80px;
+  height:80px;
+  margin:0 auto 30px auto;
+  background-color:#dab8b6;
+  border-radius: 100px;        /* CSS3草案 */  
+  -webkit-border-radius: 100px;    /* Safari,Google Chrome用 */  
+  -moz-border-radius: 100px;   /* Firefox用 */  
+}
+
+.news_date_y {
+  padding-top:13px;
+  margin-bottom:5px;
+}
+
+.news_date_d {
+  font-size:26px;
+}
+
+.newsImg {
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.newsCont {
+  padding-bottom:80px;
+}
+.newsList .newsCont {
+  padding-bottom:80px;
+  text-align:center;
+}
+.newsCont p {
+    margin-bottom: 1em;
+}
+
+/*concept*/
+
+.conceptText {
+  text-align:center;
+  padding:20px 0 40px 0;
+  font-size:18px;
+  line-height:2em;
+  letter-spacing:0.5em;
+  font-family:"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+/*gallery*/
+
+.gallery_date {
+  text-align:center;
+  color:#666;
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.gallery_slide {
+  margin-bottom:100px;
+}
+
+.gallery_arc {
+  font-size:20px;
+  margin-bottom:150px;
+}
+
+.gallery_arc_tit {
+  padding-bottom:10px;
+  border-bottom:1px solid #ccc;
+  margin-bottom:30px;
+}
+
+.gallery_arc_cont {
+  border-bottom:1px solid #ccc;
+  padding-bottom:30px;
+  margin-bottom:30px;
+}
+.gallery_arc_cont dd {
+    padding: 5px 0;
+}
+
+.gallery_arc_cont_y {
+  float:left;
+}
+
+.gallery_arc_cont_btn {
+  float:right;
+  width:24px;
+}
+
+.gallery_arc_cont dd:before {
+  content:"・";
+}
+.spMenu {
+  display: none;
+}
+
+/*press*/
+
+.press_list {
+  text-align:left;
+}
+
+.press_list li {
+  width:30%;
+  min-height:330px;
+  margin:0 1.6% 30px 1.6%;
+  float:left;
+  text-align:center;
+}
+
+/*sitemap*/
+
+.sitemap_list {
+  width:360px;
+  float:left;
+}
+
+.sitemap_list dt {
+  margin-bottom:20px;
+}
+.sitemap_list dt:before {
+  content:"■";
+  padding-right:5px;
+
+}
+
+.sitemap_list dd {
+  margin-bottom:10px;
+  padding-left:20px;
+}
+
+.mailmagazinecont iframe {
+    width: 100%;
+    height: 600px;
+}
+
+
+}

@@ -1,0 +1,3541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - eccube3_db@localhost" uuid="2fd662c3-3ed3-443c-a73d-982562572037">
+    <database-info product="MySQL" version="5.5.5-10.1.9-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="eccube3_db"/>
+      <table id="2" parent="1" name="doctrine_migration_versions"/>
+      <table id="3" parent="1" name="dtb_authority_role"/>
+      <table id="4" parent="1" name="dtb_base_info"/>
+      <table id="5" parent="1" name="dtb_block"/>
+      <table id="6" parent="1" name="dtb_block_position"/>
+      <table id="7" parent="1" name="dtb_category"/>
+      <table id="8" parent="1" name="dtb_category_count"/>
+      <table id="9" parent="1" name="dtb_category_total_count"/>
+      <table id="10" parent="1" name="dtb_class_category"/>
+      <table id="11" parent="1" name="dtb_class_name"/>
+      <table id="12" parent="1" name="dtb_csv"/>
+      <table id="13" parent="1" name="dtb_customer"/>
+      <table id="14" parent="1" name="dtb_customer_address"/>
+      <table id="15" parent="1" name="dtb_customer_favorite_product"/>
+      <table id="16" parent="1" name="dtb_delivery"/>
+      <table id="17" parent="1" name="dtb_delivery_date"/>
+      <table id="18" parent="1" name="dtb_delivery_fee"/>
+      <table id="19" parent="1" name="dtb_delivery_time"/>
+      <table id="20" parent="1" name="dtb_help"/>
+      <table id="21" parent="1" name="dtb_mail_history"/>
+      <table id="22" parent="1" name="dtb_mail_template"/>
+      <table id="23" parent="1" name="dtb_member"/>
+      <table id="24" parent="1" name="dtb_news"/>
+      <table id="25" parent="1" name="dtb_order"/>
+      <table id="26" parent="1" name="dtb_order_detail"/>
+      <table id="27" parent="1" name="dtb_page_layout"/>
+      <table id="28" parent="1" name="dtb_payment"/>
+      <table id="29" parent="1" name="dtb_payment_option"/>
+      <table id="30" parent="1" name="dtb_plugin"/>
+      <table id="31" parent="1" name="dtb_plugin_event_handler"/>
+      <table id="32" parent="1" name="dtb_product"/>
+      <table id="33" parent="1" name="dtb_product_category"/>
+      <table id="34" parent="1" name="dtb_product_class"/>
+      <table id="35" parent="1" name="dtb_product_image"/>
+      <table id="36" parent="1" name="dtb_product_stock"/>
+      <table id="37" parent="1" name="dtb_product_tag"/>
+      <table id="38" parent="1" name="dtb_shipment_item"/>
+      <table id="39" parent="1" name="dtb_shipping"/>
+      <table id="40" parent="1" name="dtb_tax_rule"/>
+      <table id="41" parent="1" name="dtb_template"/>
+      <table id="42" parent="1" name="mtb_authority"/>
+      <table id="43" parent="1" name="mtb_country"/>
+      <table id="44" parent="1" name="mtb_csv_type"/>
+      <table id="45" parent="1" name="mtb_customer_order_status"/>
+      <table id="46" parent="1" name="mtb_customer_status"/>
+      <table id="47" parent="1" name="mtb_db"/>
+      <table id="48" parent="1" name="mtb_device_type"/>
+      <table id="49" parent="1" name="mtb_disp"/>
+      <table id="50" parent="1" name="mtb_job"/>
+      <table id="51" parent="1" name="mtb_order_status"/>
+      <table id="52" parent="1" name="mtb_order_status_color"/>
+      <table id="53" parent="1" name="mtb_page_max"/>
+      <table id="54" parent="1" name="mtb_pref"/>
+      <table id="55" parent="1" name="mtb_product_list_max"/>
+      <table id="56" parent="1" name="mtb_product_list_order_by"/>
+      <table id="57" parent="1" name="mtb_product_type"/>
+      <table id="58" parent="1" name="mtb_sex"/>
+      <table id="59" parent="1" name="mtb_tag"/>
+      <table id="60" parent="1" name="mtb_taxrule"/>
+      <table id="61" parent="1" name="mtb_work"/>
+      <table id="62" parent="1" name="mtb_zip"/>
+      <table id="63" parent="1" name="migration_customertracker"/>
+      <table id="64" parent="1" name="migration_orderpdf"/>
+      <table id="65" parent="1" name="migration_paypalexpress"/>
+      <table id="66" parent="1" name="migration_relatedproduct"/>
+      <table id="67" parent="1" name="migration_shipnumber"/>
+      <table id="68" parent="1" name="migration_transportcsvexportb2"/>
+      <table id="69" parent="1" name="migration_transportcsvimportb2"/>
+      <table id="70" parent="1" name="plg_ct_history"/>
+      <table id="71" parent="1" name="plg_order_pdf_plugin"/>
+      <table id="72" parent="1" name="plg_paypal_express"/>
+      <table id="73" parent="1" name="plg_related_product"/>
+      <table id="74" parent="1" name="plg_ship_number"/>
+      <table id="75" parent="1" name="plg_transport_csv_export_b2_deliv_type"/>
+      <table id="76" parent="1" name="plg_transport_csv_export_b2_plugin"/>
+      <table id="77" parent="1" name="plg_transport_csv_import_b2"/>
+      <table id="78" parent="1" name="plg_transport_csv_import_b2_plugin"/>
+      <table id="79" parent="1" name="dtb_product_request"/>
+      <column id="80" parent="2" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="81" parent="2" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="82" parent="3" name="authority_role_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="83" parent="3" name="authority_id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="84" parent="3" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="85" parent="3" name="deny_url">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="86" parent="3" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="87" parent="3" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="88" parent="3" name="IDX_4A1F70B161220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="89" parent="3" name="IDX_4A1F70B181EC865B">
+        <columns>authority_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="90" parent="3" name="PRIMARY">
+        <columns>authority_role_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="91" parent="3" name="FK_4A1F70B161220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="92" parent="3" name="FK_4A1F70B181EC865B">
+        <columns>authority_id</columns>
+        <ref-key>~.mtb_authority.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="93" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="94" parent="4" name="country_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="95" parent="4" name="pref">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="96" parent="4" name="company_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="97" parent="4" name="company_kana">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="98" parent="4" name="zip01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="99" parent="4" name="zip02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="100" parent="4" name="zipcode">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="101" parent="4" name="addr01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="102" parent="4" name="addr02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="103" parent="4" name="tel01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="104" parent="4" name="tel02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="105" parent="4" name="tel03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="106" parent="4" name="fax01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="107" parent="4" name="fax02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="108" parent="4" name="fax03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="109" parent="4" name="business_hour">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="110" parent="4" name="email01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="111" parent="4" name="email02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="112" parent="4" name="email03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="113" parent="4" name="email04">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="114" parent="4" name="shop_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="115" parent="4" name="shop_kana">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="116" parent="4" name="shop_name_eng">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="117" parent="4" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="118" parent="4" name="good_traded">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="119" parent="4" name="message">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="120" parent="4" name="latitude">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="121" parent="4" name="longitude">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="122" parent="4" name="delivery_free_amount">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="123" parent="4" name="delivery_free_quantity">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="124" parent="4" name="option_multiple_shipping">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="125" parent="4" name="option_mypage_order_status_display">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="126" parent="4" name="nostock_hidden">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="127" parent="4" name="option_favorite_product">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="128" parent="4" name="option_product_delivery_fee">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="129" parent="4" name="option_product_tax_rule">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="130" parent="4" name="option_customer_activate">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="131" parent="4" name="option_remember_me">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="132" parent="4" name="authentication_key">
+        <data-type>longtext</data-type>
+      </column>
+      <index id="133" parent="4" name="IDX_1D3655F4A1559831">
+        <columns>pref</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="134" parent="4" name="IDX_1D3655F4F92F3E70">
+        <columns>country_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="135" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="136" parent="4" name="FK_1D3655F4A1559831">
+        <columns>pref</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="137" parent="4" name="FK_1D3655F4F92F3E70">
+        <columns>country_id</columns>
+        <ref-key>~.mtb_country.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="138" parent="5" name="block_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="139" parent="5" name="device_type_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="140" parent="5" name="block_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="141" parent="5" name="file_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="142" parent="5" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="143" parent="5" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="144" parent="5" name="logic_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="145" parent="5" name="deletable_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <index id="146" parent="5" name="device_type_id">
+        <columns>device_type_id
+file_name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="147" parent="5" name="IDX_6B54DCBD4FFA550E">
+        <columns>device_type_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="148" parent="5" name="device_type_id">
+        <columns>device_type_id
+file_name</columns>
+        <underlying-index>device_type_id</underlying-index>
+      </key>
+      <key id="149" parent="5" name="PRIMARY">
+        <columns>block_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="150" parent="5" name="FK_6B54DCBD4FFA550E">
+        <columns>device_type_id</columns>
+        <ref-key>~.mtb_device_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="151" parent="6" name="page_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="152" parent="6" name="target_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="153" parent="6" name="block_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="154" parent="6" name="block_row">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="155" parent="6" name="anywhere">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="156" parent="6" name="IDX_35DCD731C4663E4">
+        <columns>page_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="157" parent="6" name="IDX_35DCD731E9ED820C">
+        <columns>block_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="158" parent="6" name="PRIMARY">
+        <columns>page_id
+target_id
+block_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="159" parent="6" name="FK_35DCD731C4663E4">
+        <columns>page_id</columns>
+        <ref-key>~.dtb_page_layout.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="160" parent="6" name="FK_35DCD731E9ED820C">
+        <columns>block_id</columns>
+        <ref-key>~.dtb_block.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="161" parent="7" name="category_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="162" parent="7" name="parent_category_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="163" parent="7" name="creator_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="164" parent="7" name="category_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="165" parent="7" name="level">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="166" parent="7" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="167" parent="7" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="168" parent="7" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="169" parent="7" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="170" parent="7" name="IDX_5ED2C2B61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="171" parent="7" name="IDX_5ED2C2B796A8F92">
+        <columns>parent_category_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="172" parent="7" name="PRIMARY">
+        <columns>category_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="173" parent="7" name="FK_5ED2C2B61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="174" parent="7" name="FK_5ED2C2B796A8F92">
+        <columns>parent_category_id</columns>
+        <ref-key>PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="175" parent="8" name="category_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="176" parent="8" name="product_count">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="177" parent="8" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="178" parent="8" name="UNIQ_4465C40012469DE2">
+        <columns>category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="179" parent="8" name="PRIMARY">
+        <columns>category_id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="180" parent="8" name="UNIQ_4465C40012469DE2">
+        <columns>category_id</columns>
+        <underlying-index>UNIQ_4465C40012469DE2</underlying-index>
+      </key>
+      <foreign-key id="181" parent="8" name="FK_4465C40012469DE2">
+        <columns>category_id</columns>
+        <ref-key>~.dtb_category.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="182" parent="9" name="category_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="183" parent="9" name="product_count">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="184" parent="9" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="185" parent="9" name="UNIQ_75B8C1C612469DE2">
+        <columns>category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="186" parent="9" name="PRIMARY">
+        <columns>category_id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="187" parent="9" name="UNIQ_75B8C1C612469DE2">
+        <columns>category_id</columns>
+        <underlying-index>UNIQ_75B8C1C612469DE2</underlying-index>
+      </key>
+      <foreign-key id="188" parent="9" name="FK_75B8C1C612469DE2">
+        <columns>category_id</columns>
+        <ref-key>~.dtb_category.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="189" parent="10" name="class_category_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="190" parent="10" name="class_name_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="191" parent="10" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="192" parent="10" name="name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="193" parent="10" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="194" parent="10" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="195" parent="10" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="196" parent="10" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="197" parent="10" name="IDX_9B0D1DBA61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="198" parent="10" name="IDX_9B0D1DBAB462FB2A">
+        <columns>class_name_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="199" parent="10" name="PRIMARY">
+        <columns>class_category_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="200" parent="10" name="FK_9B0D1DBA61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="201" parent="10" name="FK_9B0D1DBAB462FB2A">
+        <columns>class_name_id</columns>
+        <ref-key>~.dtb_class_name.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="202" parent="11" name="class_name_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="203" parent="11" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="204" parent="11" name="name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="205" parent="11" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="206" parent="11" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="207" parent="11" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="208" parent="11" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="209" parent="11" name="IDX_187C95AD61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="210" parent="11" name="PRIMARY">
+        <columns>class_name_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="211" parent="11" name="FK_187C95AD61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="212" parent="12" name="csv_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="213" parent="12" name="csv_type">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="214" parent="12" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="215" parent="12" name="entity_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="216" parent="12" name="field_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="217" parent="12" name="reference_field_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="218" parent="12" name="disp_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="219" parent="12" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="220" parent="12" name="enable_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="221" parent="12" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="222" parent="12" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="223" parent="12" name="IDX_F55F48C32C648C74">
+        <columns>csv_type</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="224" parent="12" name="IDX_F55F48C361220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="225" parent="12" name="PRIMARY">
+        <columns>csv_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="226" parent="12" name="FK_F55F48C32C648C74">
+        <columns>csv_type</columns>
+        <ref-key>~.mtb_csv_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="227" parent="12" name="FK_F55F48C361220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="228" parent="13" name="customer_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="229" parent="13" name="status">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="230" parent="13" name="sex">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="231" parent="13" name="job">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="232" parent="13" name="country_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="233" parent="13" name="pref">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="234" parent="13" name="name01">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="235" parent="13" name="name02">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="236" parent="13" name="kana01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="237" parent="13" name="kana02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="238" parent="13" name="company_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="239" parent="13" name="zip01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="240" parent="13" name="zip02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="241" parent="13" name="zipcode">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="242" parent="13" name="addr01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="243" parent="13" name="addr02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="244" parent="13" name="email">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="245" parent="13" name="tel01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="246" parent="13" name="tel02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="247" parent="13" name="tel03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="248" parent="13" name="fax01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="249" parent="13" name="fax02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="250" parent="13" name="fax03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="251" parent="13" name="birth">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="252" parent="13" name="password">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="253" parent="13" name="salt">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="254" parent="13" name="secret_key">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="255" parent="13" name="first_buy_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="256" parent="13" name="last_buy_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="257" parent="13" name="buy_times">
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="258" parent="13" name="buy_total">
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="259" parent="13" name="note">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="260" parent="13" name="reset_key">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="261" parent="13" name="reset_expire">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="262" parent="13" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="263" parent="13" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="264" parent="13" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="265" parent="13" name="IDX_8298BBE37B00651C">
+        <columns>status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="266" parent="13" name="IDX_8298BBE3A1559831">
+        <columns>pref</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="267" parent="13" name="IDX_8298BBE3EFA269F7">
+        <columns>sex</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="268" parent="13" name="IDX_8298BBE3F92F3E70">
+        <columns>country_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="269" parent="13" name="IDX_8298BBE3FBD8E0F8">
+        <columns>job</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="270" parent="13" name="secret_key">
+        <columns>secret_key</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="271" parent="13" name="PRIMARY">
+        <columns>customer_id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="272" parent="13" name="secret_key">
+        <columns>secret_key</columns>
+        <underlying-index>secret_key</underlying-index>
+      </key>
+      <foreign-key id="273" parent="13" name="FK_8298BBE37B00651C">
+        <columns>status</columns>
+        <ref-key>~.mtb_customer_status.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="274" parent="13" name="FK_8298BBE3A1559831">
+        <columns>pref</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="275" parent="13" name="FK_8298BBE3EFA269F7">
+        <columns>sex</columns>
+        <ref-key>~.mtb_sex.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="276" parent="13" name="FK_8298BBE3F92F3E70">
+        <columns>country_id</columns>
+        <ref-key>~.mtb_country.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="277" parent="13" name="FK_8298BBE3FBD8E0F8">
+        <columns>job</columns>
+        <ref-key>~.mtb_job.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="278" parent="14" name="customer_address_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="279" parent="14" name="customer_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="280" parent="14" name="country_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="281" parent="14" name="pref">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="282" parent="14" name="name01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="283" parent="14" name="name02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="284" parent="14" name="kana01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="285" parent="14" name="kana02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="286" parent="14" name="company_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="287" parent="14" name="zip01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="288" parent="14" name="zip02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="289" parent="14" name="zipcode">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="290" parent="14" name="addr01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="291" parent="14" name="addr02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="292" parent="14" name="tel01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="293" parent="14" name="tel02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="294" parent="14" name="tel03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="295" parent="14" name="fax01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="296" parent="14" name="fax02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="297" parent="14" name="fax03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="298" parent="14" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="299" parent="14" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="300" parent="14" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="301" parent="14" name="IDX_6C38C0F89395C3F3">
+        <columns>customer_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="302" parent="14" name="IDX_6C38C0F8A1559831">
+        <columns>pref</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="303" parent="14" name="IDX_6C38C0F8F92F3E70">
+        <columns>country_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="304" parent="14" name="PRIMARY">
+        <columns>customer_address_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="305" parent="14" name="FK_6C38C0F89395C3F3">
+        <columns>customer_id</columns>
+        <ref-key>~.dtb_customer.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="306" parent="14" name="FK_6C38C0F8A1559831">
+        <columns>pref</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="307" parent="14" name="FK_6C38C0F8F92F3E70">
+        <columns>country_id</columns>
+        <ref-key>~.mtb_country.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="308" parent="15" name="favorite_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="309" parent="15" name="customer_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="310" parent="15" name="product_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="311" parent="15" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="312" parent="15" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="313" parent="15" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="314" parent="15" name="IDX_ED6313834584665A">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="315" parent="15" name="IDX_ED6313839395C3F3">
+        <columns>customer_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="316" parent="15" name="PRIMARY">
+        <columns>favorite_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="317" parent="15" name="FK_ED6313834584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="318" parent="15" name="FK_ED6313839395C3F3">
+        <columns>customer_id</columns>
+        <ref-key>~.dtb_customer.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="319" parent="16" name="delivery_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="320" parent="16" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="321" parent="16" name="product_type_id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="322" parent="16" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="323" parent="16" name="service_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="324" parent="16" name="description">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="325" parent="16" name="confirm_url">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="326" parent="16" name="rank">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="327" parent="16" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="328" parent="16" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="329" parent="16" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="330" parent="16" name="IDX_3420D9FA14959723">
+        <columns>product_type_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="331" parent="16" name="IDX_3420D9FA61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="332" parent="16" name="PRIMARY">
+        <columns>delivery_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="333" parent="16" name="FK_3420D9FA14959723">
+        <columns>product_type_id</columns>
+        <ref-key>~.mtb_product_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="334" parent="16" name="FK_3420D9FA61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="335" parent="17" name="date_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="336" parent="17" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="337" parent="17" name="value">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="338" parent="17" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="339" parent="17" name="PRIMARY">
+        <columns>date_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="340" parent="18" name="fee_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="341" parent="18" name="delivery_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="342" parent="18" name="pref">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="343" parent="18" name="fee">
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+      </column>
+      <index id="344" parent="18" name="IDX_491552412136921">
+        <columns>delivery_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="345" parent="18" name="IDX_4915524A1559831">
+        <columns>pref</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="346" parent="18" name="PRIMARY">
+        <columns>fee_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="347" parent="18" name="FK_491552412136921">
+        <columns>delivery_id</columns>
+        <ref-key>~.dtb_delivery.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="348" parent="18" name="FK_4915524A1559831">
+        <columns>pref</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="349" parent="19" name="time_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="350" parent="19" name="delivery_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="351" parent="19" name="delivery_time">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <index id="352" parent="19" name="IDX_E80EE3A612136921">
+        <columns>delivery_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="353" parent="19" name="PRIMARY">
+        <columns>time_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="354" parent="19" name="FK_E80EE3A612136921">
+        <columns>delivery_id</columns>
+        <ref-key>~.dtb_delivery.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="355" parent="20" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="356" parent="20" name="law_country_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="357" parent="20" name="law_pref">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="358" parent="20" name="customer_agreement">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="359" parent="20" name="law_company">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="360" parent="20" name="law_manager">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="361" parent="20" name="law_zip01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="362" parent="20" name="law_zip02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="363" parent="20" name="law_zipcode">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="364" parent="20" name="law_addr01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="365" parent="20" name="law_addr02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="366" parent="20" name="law_tel01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="367" parent="20" name="law_tel02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="368" parent="20" name="law_tel03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="369" parent="20" name="law_fax01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="370" parent="20" name="law_fax02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="371" parent="20" name="law_fax03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="372" parent="20" name="law_email">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="373" parent="20" name="law_url">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="374" parent="20" name="law_term01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="375" parent="20" name="law_term02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="376" parent="20" name="law_term03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="377" parent="20" name="law_term04">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="378" parent="20" name="law_term05">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="379" parent="20" name="law_term06">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="380" parent="20" name="law_term07">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="381" parent="20" name="law_term08">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="382" parent="20" name="law_term09">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="383" parent="20" name="law_term10">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="384" parent="20" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="385" parent="20" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="386" parent="20" name="IDX_FF18F0EB5C77387">
+        <columns>law_country_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="387" parent="20" name="IDX_FF18F0EBE3D20F82">
+        <columns>law_pref</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="388" parent="20" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="389" parent="20" name="FK_FF18F0EB5C77387">
+        <columns>law_country_id</columns>
+        <ref-key>~.mtb_country.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="390" parent="20" name="FK_FF18F0EBE3D20F82">
+        <columns>law_pref</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="391" parent="21" name="send_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="392" parent="21" name="order_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="393" parent="21" name="template_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="394" parent="21" name="creator_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="395" parent="21" name="send_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="396" parent="21" name="subject">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="397" parent="21" name="mail_body">
+        <data-type>longtext</data-type>
+      </column>
+      <index id="398" parent="21" name="IDX_4870AB115DA0FB8">
+        <columns>template_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="399" parent="21" name="IDX_4870AB1161220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="400" parent="21" name="IDX_4870AB118D9F6D38">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="401" parent="21" name="PRIMARY">
+        <columns>send_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="402" parent="21" name="FK_4870AB115DA0FB8">
+        <columns>template_id</columns>
+        <ref-key>~.dtb_mail_template.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="403" parent="21" name="FK_4870AB1161220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="404" parent="21" name="FK_4870AB118D9F6D38">
+        <columns>order_id</columns>
+        <ref-key>~.dtb_order.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="405" parent="22" name="template_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="406" parent="22" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="407" parent="22" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="408" parent="22" name="file_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="409" parent="22" name="subject">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="410" parent="22" name="header">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="411" parent="22" name="footer">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="412" parent="22" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="413" parent="22" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="414" parent="22" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="415" parent="22" name="IDX_1CB16DB261220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="416" parent="22" name="PRIMARY">
+        <columns>template_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="417" parent="22" name="FK_1CB16DB261220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="418" parent="23" name="member_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="419" parent="23" name="work">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="420" parent="23" name="authority">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="421" parent="23" name="creator_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="422" parent="23" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="423" parent="23" name="department">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="424" parent="23" name="login_id">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="425" parent="23" name="password">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="426" parent="23" name="salt">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="427" parent="23" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="428" parent="23" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="429" parent="23" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="430" parent="23" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="431" parent="23" name="login_date">
+        <data-type>datetime</data-type>
+      </column>
+      <index id="432" parent="23" name="IDX_10BC3BE64AF96AFC">
+        <columns>authority</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="433" parent="23" name="IDX_10BC3BE6534E6880">
+        <columns>work</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="434" parent="23" name="IDX_10BC3BE661220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="435" parent="23" name="PRIMARY">
+        <columns>member_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="436" parent="23" name="FK_10BC3BE64AF96AFC">
+        <columns>authority</columns>
+        <ref-key>~.mtb_authority.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="437" parent="23" name="FK_10BC3BE6534E6880">
+        <columns>work</columns>
+        <ref-key>~.mtb_work.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="438" parent="23" name="FK_10BC3BE661220EA6">
+        <columns>creator_id</columns>
+        <ref-key>PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="439" parent="24" name="news_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="440" parent="24" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="441" parent="24" name="news_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="442" parent="24" name="rank">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="443" parent="24" name="news_title">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="444" parent="24" name="news_comment">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="445" parent="24" name="news_url">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="446" parent="24" name="news_select">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="447" parent="24" name="link_method">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="448" parent="24" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="449" parent="24" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="450" parent="24" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="451" parent="24" name="IDX_EA4C351761220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="452" parent="24" name="PRIMARY">
+        <columns>news_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="453" parent="24" name="FK_EA4C351761220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="454" parent="25" name="order_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="455" parent="25" name="customer_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="456" parent="25" name="order_country_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="457" parent="25" name="order_pref">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="458" parent="25" name="order_sex">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="459" parent="25" name="order_job">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="460" parent="25" name="payment_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="461" parent="25" name="device_type_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="462" parent="25" name="pre_order_id">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="463" parent="25" name="message">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="464" parent="25" name="order_name01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="465" parent="25" name="order_name02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="466" parent="25" name="order_kana01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="467" parent="25" name="order_kana02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="468" parent="25" name="order_company_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="469" parent="25" name="order_email">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="470" parent="25" name="order_tel01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="471" parent="25" name="order_tel02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="472" parent="25" name="order_tel03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="473" parent="25" name="order_fax01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="474" parent="25" name="order_fax02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="475" parent="25" name="order_fax03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="476" parent="25" name="order_zip01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="477" parent="25" name="order_zip02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="478" parent="25" name="order_zipcode">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="479" parent="25" name="order_addr01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="480" parent="25" name="order_addr02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="481" parent="25" name="order_birth">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="482" parent="25" name="subtotal">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="483" parent="25" name="discount">
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="484" parent="25" name="delivery_fee_total">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="485" parent="25" name="charge">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="486" parent="25" name="tax">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="487" parent="25" name="total">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="488" parent="25" name="payment_total">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="489" parent="25" name="payment_method">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="490" parent="25" name="note">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="491" parent="25" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="492" parent="25" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="493" parent="25" name="order_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="494" parent="25" name="commit_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="495" parent="25" name="payment_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="496" parent="25" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="497" parent="25" name="status">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <index id="498" parent="25" name="IDX_1D66D8074AF5C325">
+        <columns>order_country_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="499" parent="25" name="IDX_1D66D8074C3A3BB">
+        <columns>payment_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="500" parent="25" name="IDX_1D66D8074FFA550E">
+        <columns>device_type_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="501" parent="25" name="IDX_1D66D8077B00651C">
+        <columns>status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="502" parent="25" name="IDX_1D66D8079395C3F3">
+        <columns>customer_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="503" parent="25" name="IDX_1D66D807ACF92697">
+        <columns>order_sex</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="504" parent="25" name="IDX_1D66D807B883AF98">
+        <columns>order_job</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="505" parent="25" name="IDX_1D66D807ECA4A226">
+        <columns>order_pref</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="506" parent="25" name="PRIMARY">
+        <columns>order_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="507" parent="25" name="FK_1D66D8074AF5C325">
+        <columns>order_country_id</columns>
+        <ref-key>~.mtb_country.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="508" parent="25" name="FK_1D66D8074C3A3BB">
+        <columns>payment_id</columns>
+        <ref-key>~.dtb_payment.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="509" parent="25" name="FK_1D66D8074FFA550E">
+        <columns>device_type_id</columns>
+        <ref-key>~.mtb_device_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="510" parent="25" name="FK_1D66D8079395C3F3">
+        <columns>customer_id</columns>
+        <ref-key>~.dtb_customer.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="511" parent="25" name="FK_1D66D807ACF92697">
+        <columns>order_sex</columns>
+        <ref-key>~.mtb_sex.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="512" parent="25" name="FK_1D66D807B883AF98">
+        <columns>order_job</columns>
+        <ref-key>~.mtb_job.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="513" parent="25" name="FK_1D66D807ECA4A226">
+        <columns>order_pref</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="514" parent="26" name="order_detail_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="515" parent="26" name="order_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="516" parent="26" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="517" parent="26" name="product_class_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="518" parent="26" name="product_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="519" parent="26" name="product_code">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="520" parent="26" name="class_name1">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="521" parent="26" name="class_name2">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="522" parent="26" name="class_category_name1">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="523" parent="26" name="class_category_name2">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="524" parent="26" name="price">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="525" parent="26" name="quantity">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="526" parent="26" name="tax_rate">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="527" parent="26" name="tax_rule">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <index id="528" parent="26" name="dtb_order_detail_product_id_key">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="529" parent="26" name="IDX_58FE357321B06187">
+        <columns>product_class_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="530" parent="26" name="IDX_58FE35738D9F6D38">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="531" parent="26" name="PRIMARY">
+        <columns>order_detail_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="532" parent="26" name="FK_58FE357321B06187">
+        <columns>product_class_id</columns>
+        <ref-key>~.dtb_product_class.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="533" parent="26" name="FK_58FE35734584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="534" parent="26" name="FK_58FE35738D9F6D38">
+        <columns>order_id</columns>
+        <ref-key>~.dtb_order.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="535" parent="27" name="page_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="536" parent="27" name="device_type_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="537" parent="27" name="page_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="538" parent="27" name="url">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="539" parent="27" name="file_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="540" parent="27" name="edit_flg">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="541" parent="27" name="author">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="542" parent="27" name="description">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="543" parent="27" name="keyword">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="544" parent="27" name="update_url">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="545" parent="27" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="546" parent="27" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="547" parent="27" name="meta_robots">
+        <data-type>longtext</data-type>
+      </column>
+      <index id="548" parent="27" name="IDX_F27999414FFA550E">
+        <columns>device_type_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="549" parent="27" name="PRIMARY">
+        <columns>page_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="550" parent="27" name="FK_F27999414FFA550E">
+        <columns>device_type_id</columns>
+        <ref-key>~.mtb_device_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="551" parent="28" name="payment_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="552" parent="28" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="553" parent="28" name="payment_method">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="554" parent="28" name="charge">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="555" parent="28" name="rule_max">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="556" parent="28" name="rank">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="557" parent="28" name="fix_flg">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="558" parent="28" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="559" parent="28" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="560" parent="28" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="561" parent="28" name="payment_image">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="562" parent="28" name="charge_flg">
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="563" parent="28" name="rule_min">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <index id="564" parent="28" name="IDX_7AFF628F61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="565" parent="28" name="PRIMARY">
+        <columns>payment_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="566" parent="28" name="FK_7AFF628F61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="567" parent="29" name="delivery_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="568" parent="29" name="payment_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="569" parent="29" name="IDX_5631540D12136921">
+        <columns>delivery_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="570" parent="29" name="IDX_5631540D4C3A3BB">
+        <columns>payment_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="571" parent="29" name="PRIMARY">
+        <columns>delivery_id
+payment_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="572" parent="29" name="FK_5631540D12136921">
+        <columns>delivery_id</columns>
+        <ref-key>~.dtb_delivery.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="573" parent="29" name="FK_5631540D4C3A3BB">
+        <columns>payment_id</columns>
+        <ref-key>~.dtb_payment.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="574" parent="30" name="plugin_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="575" parent="30" name="name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="576" parent="30" name="code">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="577" parent="30" name="class_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="578" parent="30" name="plugin_enable">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="579" parent="30" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="580" parent="30" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="581" parent="30" name="source">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="582" parent="30" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="583" parent="30" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="584" parent="30" name="PRIMARY">
+        <columns>plugin_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="585" parent="31" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="586" parent="31" name="plugin_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="587" parent="31" name="event">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="588" parent="31" name="priority">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="589" parent="31" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="590" parent="31" name="handler">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="591" parent="31" name="handler_type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="592" parent="31" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="593" parent="31" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="594" parent="31" name="IDX_92639EBDEC942BCF">
+        <columns>plugin_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="595" parent="31" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="596" parent="31" name="FK_92639EBDEC942BCF">
+        <columns>plugin_id</columns>
+        <ref-key>~.dtb_plugin.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="597" parent="32" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="598" parent="32" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="599" parent="32" name="status">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="600" parent="32" name="name">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="601" parent="32" name="note">
+        <data-type>text</data-type>
+      </column>
+      <column id="602" parent="32" name="description_list">
+        <data-type>text</data-type>
+      </column>
+      <column id="603" parent="32" name="description_detail">
+        <data-type>text</data-type>
+      </column>
+      <column id="604" parent="32" name="search_word">
+        <data-type>text</data-type>
+      </column>
+      <column id="605" parent="32" name="free_area">
+        <data-type>text</data-type>
+      </column>
+      <column id="606" parent="32" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="607" parent="32" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="608" parent="32" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="609" parent="32" name="IDX_C49DE22F61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="610" parent="32" name="IDX_C49DE22F7B00651C">
+        <columns>status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="611" parent="32" name="PRIMARY">
+        <columns>product_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="612" parent="32" name="FK_C49DE22F61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="613" parent="32" name="FK_C49DE22F7B00651C">
+        <columns>status</columns>
+        <ref-key>~.mtb_disp.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="614" parent="33" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="615" parent="33" name="category_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="616" parent="33" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="617" parent="33" name="IDX_B057789112469DE2">
+        <columns>category_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="618" parent="33" name="IDX_B05778914584665A">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="619" parent="33" name="PRIMARY">
+        <columns>product_id
+category_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="620" parent="33" name="FK_B057789112469DE2">
+        <columns>category_id</columns>
+        <ref-key>~.dtb_category.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="621" parent="33" name="FK_B05778914584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="622" parent="34" name="product_class_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="623" parent="34" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="624" parent="34" name="product_type_id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="625" parent="34" name="class_category_id1">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="626" parent="34" name="class_category_id2">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="627" parent="34" name="delivery_date_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="628" parent="34" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="629" parent="34" name="product_code">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="630" parent="34" name="stock">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="631" parent="34" name="stock_unlimited">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="632" parent="34" name="sale_limit">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="633" parent="34" name="price01">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="634" parent="34" name="price02">
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="635" parent="34" name="delivery_fee">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="636" parent="34" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="637" parent="34" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="638" parent="34" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="639" parent="34" name="IDX_1A11D1BA14959723">
+        <columns>product_type_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="640" parent="34" name="IDX_1A11D1BA248D128">
+        <columns>class_category_id1</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="641" parent="34" name="IDX_1A11D1BA4584665A">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="642" parent="34" name="IDX_1A11D1BA61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="643" parent="34" name="IDX_1A11D1BA9B418092">
+        <columns>class_category_id2</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="644" parent="34" name="IDX_1A11D1BAB28989B5">
+        <columns>delivery_date_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="645" parent="34" name="PRIMARY">
+        <columns>product_class_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="646" parent="34" name="FK_1A11D1BA14959723">
+        <columns>product_type_id</columns>
+        <ref-key>~.mtb_product_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="647" parent="34" name="FK_1A11D1BA248D128">
+        <columns>class_category_id1</columns>
+        <ref-key>~.dtb_class_category.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="648" parent="34" name="FK_1A11D1BA4584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="649" parent="34" name="FK_1A11D1BA61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="650" parent="34" name="FK_1A11D1BA9B418092">
+        <columns>class_category_id2</columns>
+        <ref-key>~.dtb_class_category.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="651" parent="34" name="FK_1A11D1BAB28989B5">
+        <columns>delivery_date_id</columns>
+        <ref-key>~.dtb_delivery_date.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="652" parent="35" name="product_image_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="653" parent="35" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="654" parent="35" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="655" parent="35" name="file_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="656" parent="35" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="657" parent="35" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="658" parent="35" name="IDX_3267CC7A4584665A">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="659" parent="35" name="IDX_3267CC7A61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="660" parent="35" name="PRIMARY">
+        <columns>product_image_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="661" parent="35" name="FK_3267CC7A4584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="662" parent="35" name="FK_3267CC7A61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="663" parent="36" name="product_stock_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="664" parent="36" name="product_class_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="665" parent="36" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="666" parent="36" name="stock">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="667" parent="36" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="668" parent="36" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="669" parent="36" name="IDX_BC6C9E4561220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="670" parent="36" name="UNIQ_BC6C9E4521B06187">
+        <columns>product_class_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="671" parent="36" name="PRIMARY">
+        <columns>product_stock_id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="672" parent="36" name="UNIQ_BC6C9E4521B06187">
+        <columns>product_class_id</columns>
+        <underlying-index>UNIQ_BC6C9E4521B06187</underlying-index>
+      </key>
+      <foreign-key id="673" parent="36" name="FK_BC6C9E4521B06187">
+        <columns>product_class_id</columns>
+        <ref-key>~.dtb_product_class.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="674" parent="36" name="FK_BC6C9E4561220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="675" parent="37" name="product_tag_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="676" parent="37" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="677" parent="37" name="tag">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="678" parent="37" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="679" parent="37" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="680" parent="37" name="IDX_4433E721389B783">
+        <columns>tag</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="681" parent="37" name="IDX_4433E7214584665A">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="682" parent="37" name="IDX_4433E72161220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="683" parent="37" name="PRIMARY">
+        <columns>product_tag_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="684" parent="37" name="FK_4433E721389B783">
+        <columns>tag</columns>
+        <ref-key>~.mtb_tag.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="685" parent="37" name="FK_4433E7214584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="686" parent="37" name="FK_4433E72161220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="687" parent="38" name="item_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="688" parent="38" name="order_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="689" parent="38" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="690" parent="38" name="product_class_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="691" parent="38" name="shipping_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="692" parent="38" name="product_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="693" parent="38" name="product_code">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="694" parent="38" name="class_name1">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="695" parent="38" name="class_name2">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="696" parent="38" name="class_category_name1">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="697" parent="38" name="class_category_name2">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="698" parent="38" name="price">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="699" parent="38" name="quantity">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <index id="700" parent="38" name="IDX_57C3C03921B06187">
+        <columns>product_class_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="701" parent="38" name="IDX_57C3C0394584665A">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="702" parent="38" name="IDX_57C3C0394887F3F8">
+        <columns>shipping_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="703" parent="38" name="IDX_57C3C0398D9F6D38">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="704" parent="38" name="PRIMARY">
+        <columns>item_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="705" parent="38" name="FK_57C3C03921B06187">
+        <columns>product_class_id</columns>
+        <ref-key>~.dtb_product_class.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="706" parent="38" name="FK_57C3C0394584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="707" parent="38" name="FK_57C3C0394887F3F8">
+        <columns>shipping_id</columns>
+        <ref-key>~.dtb_shipping.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="708" parent="38" name="FK_57C3C0398D9F6D38">
+        <columns>order_id</columns>
+        <ref-key>~.dtb_order.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="709" parent="39" name="shipping_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="710" parent="39" name="shipping_country_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="711" parent="39" name="shipping_pref">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="712" parent="39" name="order_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="713" parent="39" name="delivery_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="714" parent="39" name="time_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="715" parent="39" name="fee_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="716" parent="39" name="shipping_name01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="717" parent="39" name="shipping_name02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="718" parent="39" name="shipping_kana01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="719" parent="39" name="shipping_kana02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="720" parent="39" name="shipping_company_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="721" parent="39" name="shipping_tel01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="722" parent="39" name="shipping_tel02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="723" parent="39" name="shipping_tel03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="724" parent="39" name="shipping_fax01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="725" parent="39" name="shipping_fax02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="726" parent="39" name="shipping_fax03">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="727" parent="39" name="shipping_zip01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="728" parent="39" name="shipping_zip02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="729" parent="39" name="shipping_zipcode">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="730" parent="39" name="shipping_addr01">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="731" parent="39" name="shipping_addr02">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="732" parent="39" name="shipping_delivery_name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="733" parent="39" name="shipping_delivery_time">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="734" parent="39" name="shipping_delivery_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="735" parent="39" name="shipping_delivery_fee">
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="736" parent="39" name="shipping_commit_date">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="737" parent="39" name="rank">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="738" parent="39" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="739" parent="39" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="740" parent="39" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="741" parent="39" name="IDX_2EBD22CE12136921">
+        <columns>delivery_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="742" parent="39" name="IDX_2EBD22CE30E90E33">
+        <columns>shipping_pref</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="743" parent="39" name="IDX_2EBD22CE41D46E2E">
+        <columns>shipping_country_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="744" parent="39" name="IDX_2EBD22CE5EEADD3B">
+        <columns>time_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="745" parent="39" name="IDX_2EBD22CE8D9F6D38">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="746" parent="39" name="IDX_2EBD22CEAB45AECA">
+        <columns>fee_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="747" parent="39" name="PRIMARY">
+        <columns>shipping_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="748" parent="39" name="FK_2EBD22CE12136921">
+        <columns>delivery_id</columns>
+        <ref-key>~.dtb_delivery.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="749" parent="39" name="FK_2EBD22CE30E90E33">
+        <columns>shipping_pref</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="750" parent="39" name="FK_2EBD22CE41D46E2E">
+        <columns>shipping_country_id</columns>
+        <ref-key>~.mtb_country.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="751" parent="39" name="FK_2EBD22CE5EEADD3B">
+        <columns>time_id</columns>
+        <ref-key>~.dtb_delivery_time.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="752" parent="39" name="FK_2EBD22CE8D9F6D38">
+        <columns>order_id</columns>
+        <ref-key>~.dtb_order.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="753" parent="39" name="FK_2EBD22CEAB45AECA">
+        <columns>fee_id</columns>
+        <ref-key>~.dtb_delivery_fee.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="754" parent="40" name="tax_rule_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="755" parent="40" name="product_class_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="756" parent="40" name="creator_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="757" parent="40" name="country_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="758" parent="40" name="pref_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="759" parent="40" name="product_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="760" parent="40" name="calc_rule">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="761" parent="40" name="tax_rate">
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;8&apos;</default-expression>
+      </column>
+      <column id="762" parent="40" name="tax_adjust">
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="763" parent="40" name="apply_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="764" parent="40" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="765" parent="40" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="766" parent="40" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="767" parent="40" name="IDX_59F696DE4584665A">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="768" parent="40" name="IDX_59F696DE61220EA6">
+        <columns>creator_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="769" parent="40" name="IDX_59F696DE800F7945">
+        <columns>calc_rule</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="770" parent="40" name="IDX_59F696DEE171EF5F">
+        <columns>pref_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="771" parent="40" name="IDX_59F696DEF92F3E70">
+        <columns>country_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="772" parent="40" name="UNIQ_59F696DE21B06187">
+        <columns>product_class_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="773" parent="40" name="PRIMARY">
+        <columns>tax_rule_id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="774" parent="40" name="UNIQ_59F696DE21B06187">
+        <columns>product_class_id</columns>
+        <underlying-index>UNIQ_59F696DE21B06187</underlying-index>
+      </key>
+      <foreign-key id="775" parent="40" name="FK_59F696DE21B06187">
+        <columns>product_class_id</columns>
+        <ref-key>~.dtb_product_class.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="776" parent="40" name="FK_59F696DE4584665A">
+        <columns>product_id</columns>
+        <ref-key>~.dtb_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="777" parent="40" name="FK_59F696DE61220EA6">
+        <columns>creator_id</columns>
+        <ref-key>~.dtb_member.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="778" parent="40" name="FK_59F696DE800F7945">
+        <columns>calc_rule</columns>
+        <ref-key>~.mtb_taxrule.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="779" parent="40" name="FK_59F696DEE171EF5F">
+        <columns>pref_id</columns>
+        <ref-key>~.mtb_pref.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="780" parent="40" name="FK_59F696DEF92F3E70">
+        <columns>country_id</columns>
+        <ref-key>~.mtb_country.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="781" parent="41" name="template_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="782" parent="41" name="device_type_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="783" parent="41" name="template_code">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="784" parent="41" name="template_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="785" parent="41" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="786" parent="41" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="787" parent="41" name="IDX_94C12A694FFA550E">
+        <columns>device_type_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="788" parent="41" name="PRIMARY">
+        <columns>template_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="789" parent="41" name="FK_94C12A694FFA550E">
+        <columns>device_type_id</columns>
+        <ref-key>~.mtb_device_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="790" parent="42" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="791" parent="42" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="792" parent="42" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="793" parent="42" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="794" parent="43" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="795" parent="43" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="796" parent="43" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="797" parent="43" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="798" parent="44" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="799" parent="44" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="800" parent="44" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="801" parent="44" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="802" parent="45" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="803" parent="45" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="804" parent="45" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="805" parent="45" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="806" parent="46" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="807" parent="46" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="808" parent="46" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="809" parent="46" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="810" parent="47" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="811" parent="47" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="812" parent="47" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="813" parent="47" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="814" parent="48" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="815" parent="48" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="816" parent="48" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="817" parent="48" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="818" parent="49" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="819" parent="49" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="820" parent="49" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="821" parent="49" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="822" parent="50" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="823" parent="50" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="824" parent="50" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="825" parent="50" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="826" parent="51" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="827" parent="51" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="828" parent="51" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="829" parent="51" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="830" parent="52" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="831" parent="52" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="832" parent="52" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="833" parent="52" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="834" parent="53" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="835" parent="53" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="836" parent="53" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="837" parent="53" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="838" parent="54" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="839" parent="54" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="840" parent="54" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="841" parent="54" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="842" parent="55" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="843" parent="55" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="844" parent="55" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="845" parent="55" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="846" parent="56" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="847" parent="56" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="848" parent="56" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="849" parent="56" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="850" parent="57" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="851" parent="57" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="852" parent="57" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="853" parent="57" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="854" parent="58" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="855" parent="58" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="856" parent="58" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="857" parent="58" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="858" parent="59" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="859" parent="59" name="name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="860" parent="59" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="861" parent="59" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="862" parent="60" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="863" parent="60" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="864" parent="60" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="865" parent="60" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="866" parent="61" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="867" parent="61" name="name">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="868" parent="61" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="869" parent="61" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="870" parent="62" name="zip_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="871" parent="62" name="zipcode">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="872" parent="62" name="state">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="873" parent="62" name="city">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="874" parent="62" name="town">
+        <data-type>longtext</data-type>
+      </column>
+      <key id="875" parent="62" name="PRIMARY">
+        <columns>zip_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="876" parent="63" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="877" parent="63" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="878" parent="64" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="879" parent="64" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="880" parent="65" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="881" parent="65" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="882" parent="66" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="883" parent="66" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="884" parent="67" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="885" parent="67" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="886" parent="68" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="887" parent="68" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="888" parent="69" name="version">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="889" parent="69" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="890" parent="70" name="history_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="891" parent="70" name="customer_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="892" parent="70" name="session_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="893" parent="70" name="uri">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="894" parent="70" name="prev_uri">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="895" parent="70" name="referrer">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="896" parent="70" name="visited">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="897" parent="70" name="stayed">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="898" parent="70" name="customer_session_visited_key">
+        <columns>customer_id
+session_id
+visited</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="899" parent="70" name="PRIMARY">
+        <columns>history_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="900" parent="71" name="plugin_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="901" parent="71" name="plugin_code">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="902" parent="71" name="plugin_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="903" parent="71" name="sub_data">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="904" parent="71" name="auto_update_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="905" parent="71" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="906" parent="71" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="907" parent="71" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="908" parent="71" name="PRIMARY">
+        <columns>plugin_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="909" parent="72" name="paypal_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="910" parent="72" name="api_user">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="911" parent="72" name="api_password">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="912" parent="72" name="api_signature">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="913" parent="72" name="use_express_btn">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="914" parent="72" name="corporate_logo">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="915" parent="72" name="border_color">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="916" parent="72" name="use_sandbox">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="917" parent="72" name="paypal_logo">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="918" parent="72" name="payment_paypal_logo">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="919" parent="72" name="is_configured">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="920" parent="72" name="payment_id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="921" parent="72" name="in_context">
+        <data-type>longtext</data-type>
+      </column>
+      <key id="922" parent="72" name="PRIMARY">
+        <columns>paypal_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="923" parent="73" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="924" parent="73" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="925" parent="73" name="child_product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="926" parent="73" name="content">
+        <data-type>longtext</data-type>
+      </column>
+      <key id="927" parent="73" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="928" parent="74" name="order_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="929" parent="74" name="ship_number">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="930" parent="75" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="931" parent="75" name="name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="932" parent="75" name="rank">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+      </column>
+      <key id="933" parent="75" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="934" parent="76" name="plugin_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="935" parent="76" name="plugin_code">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="936" parent="76" name="plugin_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="937" parent="76" name="sub_data">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="938" parent="76" name="auto_update_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="939" parent="76" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="940" parent="76" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="941" parent="76" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="942" parent="76" name="PRIMARY">
+        <columns>plugin_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="943" parent="77" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="944" parent="77" name="shipping_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="945" parent="77" name="order_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="946" parent="77" name="invoice_number">
+        <data-type>longtext</data-type>
+      </column>
+      <key id="947" parent="77" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="948" parent="78" name="plugin_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="949" parent="78" name="plugin_code">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="950" parent="78" name="plugin_name">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="951" parent="78" name="sub_data">
+        <data-type>longtext</data-type>
+      </column>
+      <column id="952" parent="78" name="mail_template_id">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="953" parent="78" name="auto_update_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="954" parent="78" name="del_flg">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="955" parent="78" name="create_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="956" parent="78" name="update_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="957" parent="78" name="PRIMARY">
+        <columns>plugin_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="958" parent="79" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="959" parent="79" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="960" parent="79" name="product_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="961" parent="79" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

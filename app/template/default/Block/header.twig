@@ -1,0 +1,162 @@
+<div class="header_top clearfix">
+    <ul class="header_top_L alpha">
+      <li><a href="https://twitter.com/Latia_official" target="_blank"><img src="{{ app.config.front_urlpath }}/img/common/headerBtn01.png" alt="twitter"></a></li>
+      <li><a href="https://www.facebook.com/latia.story/" target="_blank"><img src="{{ app.config.front_urlpath }}/img/common/headerBtn02.png" alt="facebook"></a></li>
+      <li><a href="https://www.instagram.com/latia.official/" target="_blank"><img src="{{ app.config.front_urlpath }}/img/common/headerBtn03.png" alt="inst"></a></li>
+    </ul>
+    <ul class="header_top_R garamond">
+      <li><a href="{{app.config.root}}mypage">MEMBERS</a></li>
+      <li><a href="{{app.config.root}}user_data/magazine">MAIL MAGAZINE</a></li>
+    </ul>
+  </div>
+<div class="header_mid pc">
+    <h1 class="alpha logo pc"><a href="{{app.config.root}}"><img src="{{ app.config.front_urlpath }}/img/common/logo.png" alt="latia"></a></h1>
+    <p class="logo_text garamond pc">OFFICIAL SITE</p>
+   </div>
+<div class="header_mid sp clearfix">
+<h1 class="alpha logo sp"><a href="{{app.config.root}}"><img src="{{ app.config.front_urlpath }}/img/sp/logo.png" alt="latia"></a></h1>
+<div class="menuBtn">
+      <img class="openBtn" src="{{ app.config.front_urlpath }}/img/sp/menu.png" alt="menu" style="display: block;">
+      <img class="closeBtn" src="{{ app.config.front_urlpath }}/img/sp/close.png" alt="menu" style="display: none;">
+    </div>
+</div>
+<nav class="spMenu garamond">
+  <div class="clearfix">
+    <div class="menu_L">
+      HOME<a class="menu_link" href="{{app.config.root}}"></a>
+    </div>
+    <div class="menu_R">
+      NEWS<a class="menu_link" href="{{app.config.root}}user_data/newslist"></a>
+    </div>
+  </div><!--clearfix-->
+  <div class="clearfix">
+    <div class="menu_L">
+      ONLINE SHOP<a class="menu_link" href="{{app.config.root}}user_data/shop"></a>
+    </div>
+    <div class="menu_R">
+      GALLERY<a class="menu_link" href="{{app.config.root}}user_data/gallery"></a>
+    </div>
+  </div><!--clearfix-->
+  <div class="clearfix">
+    <div class="menu_L">
+      CONCEPT<a class="menu_link" href="{{app.config.root}}user_data/concept"></a>
+    </div>
+    <div class="menu_R">
+      CATEGORY<span class="menu_link catBtn"></span>
+    </div>
+  </div><!--clearfix-->
+  <div class="clearfix">
+    <div class="menu_L">
+      PRESS<a class="menu_link" href="{{app.config.root}}user_data/press"></a>
+    </div>
+    <div class="menu_R">
+      HOW TO USE<a class="menu_link" href=""></a>
+    </div>
+  </div><!--clearfix-->
+  <div class="clearfix">
+    <div class="menu_L">
+      MAIL MAGAZINE<a class="menu_link" href="{{app.config.root}}user_data/magazine"></a>
+    </div>
+    <div class="menu_R">
+      FAQ<a class="menu_link" href="{{app.config.root}}user_data/faq"></a>
+    </div>
+  </div><!--clearfix-->
+  <div class="clearfix">
+    <div class="menu_L">
+      CONTACT US<a class="menu_link" href=""></a>
+    </div>
+  </div><!--clearfix-->
+  <div class="searchBox">
+     <form method="get" id="searchform1" action="{{ path('product_list') }}">
+
+                <div class="input_search clearfix">
+                    <input name="keywords1" id="keywords1" value="" type="text">
+                    <input type="image" id="searchBtn1" class="bt_search" src="{{ app.config.front_urlpath }}/img/common/ser_btn.png"></inout>
+
+            </div>
+      </form>
+  </div>
+  
+  <div class="catMenu">
+    <div class="clearfix">
+      <div class="menu_back">
+        CATEGORY<span class="menu_link catBtn"></span>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        ALL ITEM<a class="menu_link" href="{{app.config.root}}products/list"></a>
+      </div>
+      <div class="menu_R">
+        NEW ARRIVAL<a class="menu_link" href="{{app.config.root}}products/list?category_id=6"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        NECKLACE<a class="menu_link" href="{{app.config.root}}products/list?category_id=7"></a>
+      </div>
+      <div class="menu_R">
+        RING<a class="menu_link" href="{{app.config.root}}products/list?category_id=8"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        PINKY RING<a class="menu_link" href="{{app.config.root}}products/list?category_id=9"></a>
+      </div>
+      <div class="menu_R">
+        PIERCE<a class="menu_link" href="{{app.config.root}}products/list?category_id=10"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        EARRINGS<a class="menu_link" href="{{app.config.root}}products/list?category_id=11"></a>
+      </div>
+      <div class="menu_R">
+        BRACELET<a class="menu_link" href="{{app.config.root}}products/list?category_id=12"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        ANKLET<a class="menu_link" href="{{app.config.root}}products/list?category_id=13"></a>
+      </div>
+      <div class="menu_R">
+        PAIR RING<a class="menu_link" href="{{app.config.root}}products/list?category_id=14"></a>
+      </div>
+    </div><!--clearfix-->
+    <div class="clearfix">
+      <div class="menu_L">
+        BIRTH STONE<a class="menu_link" href="{{app.config.root}}user_data/birthstone?month=3"></a>
+      </div>
+      <div class="menu_R">
+        GIFT<a class="menu_link" href="{{app.config.root}}products/list?category_id=16"></a>
+      </div>
+    </div><!--clearfix-->
+  </div>
+</nav>
+<nav class="pc">
+    <ul class="gNav garamond">
+      <li><a href="{{app.config.root}}">HOME</a></li>
+      <li><a href="{{app.config.root}}user_data/newslist">NEWS</a></li>
+      <li><a href="{{app.config.root}}user_data/shop">ONLINE SHOP</a></li>
+      <li><a href="{{app.config.root}}user_data/concept">CONCEPT</a></li>
+      <li><a href="{{app.config.root}}user_data/gallery">GALLERY</a></li>
+      <li data-menu-label="menu1"><a href="">CATEGORY</a></li>
+      <li><a href="{{app.config.root}}user_data/press">PRESS</a></li>
+    </ul>
+    <div class="menu1 garamond">
+      <ul>
+<li><a href="{{app.config.root}}products/list">ALL ITEM</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=6">NEW ARRIVAL</a></li>
+         <li><a href="{{app.config.root}}products/list?category_id=7">NECKLACE</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=8">RING</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=9">PINKY RING</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=10">PIERCE</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=11">EARRINGS</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=12">BRACELET</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=13">ANKLET</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=14">PAIR RING</a></li>
+        <li><a href="{{app.config.root}}user_data/birthstone?month=3">BIRTH STONE</a></li>
+        <li><a href="{{app.config.root}}products/list?category_id=16">GIFT</a></li>
+      </ul>
+    </div><!--menu1-->
+  </nav>

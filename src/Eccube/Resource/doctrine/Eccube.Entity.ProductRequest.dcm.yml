@@ -1,0 +1,21 @@
+Eccube\Entity\ProductRequest:
+    type: entity
+    table: dtb_product_request
+    repositoryClass: Eccube\Repository\ProductRequestRepository
+    id:
+        type: integer
+        nullable: false
+        unsigned: false
+        id: true
+        column: id
+        generator:
+            strategy: AUTO
+
+    fields:
+        user_id:
+            type: integer
+            nullable: false
+        product_id:
+            type: integer
+            nullable: false
+    lifecycleCallbacks: {  }

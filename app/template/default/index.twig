@@ -1,0 +1,102 @@
+{#
+This file is part of EC-CUBE
+
+Copyright(c) 2000-2015 LOCKON CO.,LTD. All Rights Reserved.
+
+http://www.lockon.co.jp/
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#}
+
+{% extends 'default_frame.twig' %}
+
+
+{% set body_class = 'front_page' %}
+
+{% block javascript %}
+<script>
+$(function(){
+    $('.main_visual').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        speed: 300
+    });
+});
+</script>
+{% endblock %}
+
+{% block main %}
+
+
+
+<section class="top">
+<div class="wrapper">
+
+
+
+<div class="top_cont01">
+    <a class="garamond" href="{{app.config.root}}user_data/shop">ONLINE SHOP</a>
+</div>
+
+<div class="mb-90 alpha">
+      <p class="garamond mb-10 imgText">NEW ARRIVAL</p>
+      <a href="{{app.config.root}}products/list?category_id=6"><img src="{{ app.config.front_urlpath }}/img/top/n1.jpg" alt="NEW ARRIVAL"></a>
+</div>
+<div class="mb-90 alpha clearfix">
+     {% if news %}
+  <p class="garamond mb-10 imgText">NEWS</p>
+  {% for key, post in news %}
+{% if key == 0 %}
+    <div class="img_L">
+    <a href="{{app.config.root}}user_data/news?id={{post.id}}"><img src="{{post.media}}"></a>
+</div>
+{% elseif key == 1 %}
+    <div class="img_R">
+    <a href="{{app.config.root}}user_data/news?id={{post.id}}"><img src="{{post.media}}"></a>
+</div>
+{% endif %}
+
+
+  {% endfor %}
+{% endif %}
+    </div>
+    <div class="mb-90 alpha">
+{% if galleryimg %}
+      <p class="garamond mb-10 imgText">GALLERY</p>
+      <a href="{{app.config.root}}user_data/gallery"><img src="{{app.config.user_data_urlpath}}/gallerydir/{{galleryimg}}" alt=""></a>
+{% endif %}
+</div>
+</div>
+</section>
+
+<!--    <div class="row">
+       <div class="col-sm-12">
+            <div class="main_visual">
+                <div class="item">
+                  <img src="{{ app.config.front_urlpath }}/img/top/mv01.jpg">
+                </div>
+                <div class="item">
+                  <img src="{{ app.config.front_urlpath }}/img/top/mv02.jpg">
+                </div>
+                <div class="item">
+                  <img src="{{ app.config.front_urlpath }}/img/top/mv03.jpg">
+                </div>
+            </div>
+        </div>
+    </div> --!>
+{% endblock %}
+
+

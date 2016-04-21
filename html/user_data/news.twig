@@ -1,0 +1,34 @@
+{% extends "default_frame.twig" %}
+
+
+
+{% block main%}
+
+<div class="pageInner">
+   <div class="pageTit garamond">
+      <h2>NEWS</h2>
+    </div><!--pageTit-->
+
+
+{% if news %}
+
+
+
+ <div class="news_date garamond">
+        <p class="news_date_y">{{news.0.year}}</p>
+        <p class="news_date_d">{{news.0.date}}</p>
+</div>
+
+<div class="newsCont">
+<p class="mb-20">{{news.0.title.rendered}}</p>
+{% autoescape false %}
+{{news.0.content.rendered}}
+{% endautoescape %}
+</div>
+{% endif %}
+
+ <div class="pageBot_btn01 garamond">
+      <a href="./newslist">NEWS LIST</a>
+    </div>
+</div>
+{% endblock %}

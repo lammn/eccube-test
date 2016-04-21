@@ -1,0 +1,2 @@
+eccube.event.render.product_list.before:
+    - [changeSortOrder, NORMAL]

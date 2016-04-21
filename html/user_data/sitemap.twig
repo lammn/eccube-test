@@ -1,0 +1,45 @@
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+
+<section class="top">
+  <div class="wrapper pageCont">
+    <div class="pageTit garamond">
+      <h2>SITE MAP</h2>
+    </div><!--pageTit-->
+    <div class="pageInner">
+      <div class="clearfix">
+        <dl class="sitemap_list">
+          <dt><a href="{{app.config.root}}">HOME</a></dt>
+          <dt><a href="{{app.config.root}}user_data/newslist">NEWS</a></dt>
+          <dt><a href="{{app.config.root}}user_data/concept">CONCEPT</a></dt>
+          <dt><a href="{{app.config.root}}user_data/gallery">GALLERY</a></dt>
+          <dt><a href="{{app.config.root}}user_data/press">PRESS</a></dt>
+          <dt><a href="{{app.config.root}}entry">会員登録</a></dt>
+          <dt><a href="{{app.config.root}}mypage">メルマガ</a></dt>
+          <dt><a href="{{app.config.root}}contact">お問い合わせ</a></dt>
+          <dt><a href="{{app.config.root}}user_data/faq#faq2">送料・お支払い方法</a></dt>
+          <dt><a href="{{app.config.root}}help/about">会社概要</a></dt>
+          <dt><a href="{{app.config.root}}user_data/recruit">採用情報</a></dt>
+          <dt><a href="{{app.config.root}}help/privacy">プライバシーポリシー</a></dt>
+          <dt><a href="{{app.config.root}}help/tradelaw">特定商取引法</a></dt>
+          <dt><a href="{{app.config.root}}user_data/sitemap">サイトマップ</a></dt>
+        </dl>
+        
+        <dl class="sitemap_list">
+          <dt><a href="{{app.config.root}}user_data/shop">ONLINE SHOP</a></dt>
+          <dd><a href="{{app.config.root}}user_data/howtoshop">HOW TO SHOP</a></dd>
+          <dd><a href="{{app.config.root}}user_data/size">TAKE THE SIZE</a></dd>
+          <dd><a href="{{app.config.root}}user_data/faq">FAQ</a></dd>
+        </dl>
+      </div>
+    </div><!--inner-->
+  </div><!--wrapper-->
+  <div class="wrapper">
+    <div class="top_cont01 top_cont01--page">
+      <a class="garamond" href="{{app.config.root}}user_data/shop">ONLINE SHOP</a>
+    </div><!--cont01-->
+  </div>
+</section>
+
+{% endblock %}

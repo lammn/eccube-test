@@ -1,0 +1,295 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	background: #fff;
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #e0e0df;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #b5b6b5;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(images/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(images/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+  margin-left:-30px;
+	margin-top: -16px;
+	outline: 0;
+	width: 42px;
+	height: 40px;
+	text-indent: -9999px;
+	z-index: 9999;
+  background:url(../images/pre.png) no-repeat;
+}
+
+.bx-next {
+  background:url(../images/nex.png) no-repeat !important;
+   margin-right:-30px;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+/*繧ｫ繧ｹ繧ｿ繝槭う繧ｺ逕ｨ霑ｽ險呂SS Start*/
+
+div.slider {
+  width:800px;
+	display:block;
+	margin:40px auto;
+}
+
+div.slider .bx-wrapper {
+	margin:0 auto 15px;/*繝｡繧､繝ｳ繧ｹ繝ｩ繧､繝繝ｼ縺ｨ繧ｵ繝�繝阪う繝ｫ縺ｮ髢薙�菴咏區繧貞､画峩*/
+}
+
+ul.bxslider01 li {
+	display:block;
+	width:800px !important;/*繝｡繧､繝ｳ繧ｹ繝ｩ繧､繝繝ｼ縺ｮ讓ｪ蟷�*/
+	height:450px;/*繝｡繧､繝ｳ繧ｹ繝ｩ繧､繝繝ｼ縺ｮ邵ｦ蟷�*/
+}
+
+
+ul.bxslider01 li img{
+	display:block;
+	width:720px;
+	height:auto;
+  padding:0 40px;
+}
+
+ul.bxslider02 li a {
+	display:block;
+	width:142px;/*繧ｵ繝�繝阪う繝ｫ縺ｮ讓ｪ蟷�*/
+	height:82px;/*繧ｵ繝�繝阪う繝ｫ縺ｮ邵ｦ蟷�*/
+}
+
+ul.bxslider02 li a img{
+	display:block;
+	width:142px;/*繧ｵ繝�繝阪う繝ｫ縺ｮ讓ｪ蟷�*/
+	height:auto;/*繧ｵ繝�繝阪う繝ｫ縺ｮ邵ｦ蟷�*/
+}
+
+div.controlWrap {
+	width:800px;
+	display:block;
+	position:relative;
+	margin:0 auto;
+}
+
+div.controlWrap p#PrevIcon a{
+	display:block;
+	width:19px;
+	height:80px;
+	position:absolute;
+	background:url(../images/pre.png) left center no-repeat;/*繧ｪ繝ｪ繧ｸ繝翫Ν縺ｮ遏｢蜊ｰ繧｢繧､繧ｳ繝ｳ繧定ｨｭ螳壹＠縺ｦ縺�∪縺�*/
+	color:#fff;
+	top:0;
+	left:0;
+	text-indent:-9999px;
+}
+
+div.controlWrap p#NextIcon a{
+	display:block;
+	width:19px;
+	height:80px;
+	position:absolute;
+	background:url(../images/nex.png) left center no-repeat;/*繧ｪ繝ｪ繧ｸ繝翫Ν縺ｮ遏｢蜊ｰ繧｢繧､繧ｳ繝ｳ繧定ｨｭ螳壹＠縺ｦ縺�∪縺�*/
+	color:#fff;
+	top:0;
+	right:30px;
+	text-indent:-9999px;
+}
+
+.bxslider02 li {
+  width:154px !important;
+  margin-right:17px !important;
+}
+
+.bxslider02 li img {
+  padding:0 6px;
+}
+
+.mainSlide .bx-viewport {
+  overflow:inherit !important;
+}
+
+.controlWrap .bx-wrapper {
+  max-width:660px !important;
+}
+
+
+/*繧ｫ繧ｹ繧ｿ繝槭う繧ｺ逕ｨ霑ｽ險呂SS End*/

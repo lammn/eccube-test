@@ -1,0 +1,8 @@
+name: 顧客トラッカー
+event: CustomerTracker
+code: CustomerTracker
+version: 1.0.1
+service:
+    - CustomerTrackerServiceProvider
+orm.path:
+    - /Resource/doctrine

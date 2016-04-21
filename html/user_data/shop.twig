@@ -1,0 +1,138 @@
+{% extends "default_frame_shop.twig" %}
+
+{% block main %}
+
+<section>
+      <div class="page_sTit garamond">
+        <h3>NEW ARRIVAL</h3>
+      </div>
+      <div class="top_cont1 mb-90  onShop_cont1_boxes">
+
+
+    <ul class="top_cont1_cont alpha narriv">
+{% for key, Product in newarrival %}
+         {% if key != 4 %} 
+             <li>
+                    <a href="{{ url('product_detail', {'id': Product.id}) }}"><img src="{{ app.config.image_save_urlpath }}/{{ Product.main_list_image|no_image_product }}" alt=""></a>
+            <a href="{{ url('product_detail', {'id': Product.id}) }}"><span class="productNameThumb">{{Product.name}}</span><br />{{Product.getPrice02IncTaxMin|price }}</a>
+          </li>
+ {% endif %}
+
+          {% endfor %}
+        </ul>
+      </div><!--cont1-->
+      
+<div class="page_sTit garamond">
+        <h3>TOPICS</h3>
+      </div>
+      <div class="top_cont2 mb-90">
+        <div class="pageInner controlWrap">
+<ul class="top_cont1_cont alpha bxsliderTopics">
+
+<li style="">
+  <a href="{{app.config.root}}user_data/birthstone?month=3"><img src="{{ app.config.front_urlpath }}/img/common/t2.jpg" alt=""></a>
+</li>
+<li style="">
+<a href="{{app.config.root}}user_data/topics"><img src="{{ app.config.front_urlpath }}/img/common/t1.jpg" alt=""></a>
+</li>
+</ul>
+ <p id="PrevIconTopics"></p>
+ <p id="NextIconTopics"></p>
+        </div>
+      </div><!--cont2-->
+
+{% if topics %}
+<div class="page_sTit garamond">
+        <h3>TOPICS</h3>
+      </div>
+      <div class="top_cont2">
+        <div class="pageInner controlWrap">
+<ul class="top_cont1_cont alpha bxsliderTopics">
+<li style="">
+          <a href="{{app.config.root}}user_data/topics"><img src="{{app.config.user_data_urlpath}}/topicsdir/{{topics}}" alt=""></a>
+</li>
+{% if birthstoneimg %}
+{% if monthnow %}
+{% for img in birthstoneimg %}
+<li style="">
+<a href="{{app.config.root}}user_data/birthstone?month={{monthnow}}"><img src="{{app.config.user_data_urlpath}}/birthstoneimgdir/{{monthnow}}/{{img}}" alt=""></a>
+</li>
+{% endfor %}
+{% endif %}
+{% endif %}
+</ul>
+ <p id="PrevIconTopics"></p>
+ <p id="NextIconTopics"></p>
+        </div>
+      </div><!--cont2-->
+{% endif %}
+      <div class="page_sTit garamond">
+        <h3>RECOMMEND</h3>
+      </div>
+      <div class="top_cont3 mb-90">
+
+<div class="controlWrap top_cont1 mb-90 onShop_cont1_boxes">
+        <ul class="top_cont1_cont alpha bxsliderRecom">
+          {% if recommend %}
+{% for key , item in recommend %}
+<li  style="height:200px;"><a data-slide-index="{{key}}" href="{{ url('product_detail', {'id': item.id}) }}">
+<img src="{{ app.config.image_save_urlpath }}/{{ item.main_list_image|no_image_product }}" alt="">
+<span  class="productNameThumb">{{item.name}}</span>
+<br />{{item.getPrice02IncTaxMin|price }}
+</a>
+</li>
+{% endfor %}
+{% endif %}
+</ul>
+ <p id="PrevIconRecom"></p>
+ <p id="NextIconRecom"></p>
+</div>
+
+      </div><!--cont2-->
+      
+       <div class="page_sTit garamond">
+        <h3>WEEKLY RANKING</h3>
+      </div>
+
+    
+    </section>
+</div>
+      <div class="top_cont1 mb-90 onShop_cont1_boxes">
+        <ul class="top_cont1_cont alpha">
+<li>
+<div class="crown"><img src="{{ app.config.front_urlpath }}/img/common/crown01.png" alt="1"></div>
+<a href="{{app.config.root}}products/detail/174"><img src="{{ app.config.front_urlpath }}/img/common/rank01.jpg" alt=""></a>
+<a href="{{app.config.root}}products/detail/174"><span  class="productNameThumb">【Limited】Cheers EARRINGS　【…</span><br />¥4,320</a>
+</li>
+<li>
+<div class="crown"><img src="{{ app.config.front_urlpath }}/img/common/crown02.png" alt="1"></div>
+<a href="{{app.config.root}}products/detail/55"><img src="{{ app.config.front_urlpath }}/img/common/rank02.jpg" alt=""></a>
+<a href="{{app.config.root}}products/detail/55"><span  class="productNameThumb">HALF ETERNITY RING ハーフエタニティリング </span><br />¥ 11,340</a>
+</li>
+<li>
+<div class="crown"><img src="{{ app.config.front_urlpath }}/img/common/crown03.png" alt="1"></div>
+<a href="{{app.config.root}}products/detail/44"><img src="{{ app.config.front_urlpath }}/img/common/rank03.jpg" alt=""></a>
+<a href="{{app.config.root}}products/detail/44"><span  class="productNameThumb">HUG RING ハグリング</span><br />¥ 11,340</a>
+</li>
+
+         </ul>
+      </div><!--cont1--> 
+
+   <!--<div class="top_cont1 mb-90 onShop_cont1_boxes">
+        <ul class="top_cont1_cont alpha">
+{% if ranking %}
+{% for key , rank in ranking %}
+<li>
+<div class="crown"><img src="{{ app.config.front_urlpath }}/img/common/crown0{{key+1}}.png" alt="1"></div>
+<a href="{{ url('product_detail', {'id': rank.id}) }}"><img src="{{ app.config.image_save_urlpath }}/{{ rank.main_list_image|no_image_product }}" alt=""></a>
+<a href="{{ url('product_detail', {'id': rank.id}) }}"><span  class="productNameThumb">{{rank.name}}</span><br />{{rank.getPrice02IncTaxMin|price }}</a>
+</li>
+{% endfor %}
+{% endif %}
+         </ul>
+      </div><!--cont1-->   
+    
+    </section>
+</div>
+
+{% endblock %}
